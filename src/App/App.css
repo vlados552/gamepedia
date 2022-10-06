@@ -1,0 +1,49 @@
+body {
+	background-color: black;
+	color: white;
+}
+a {
+	color: white;
+}
+header {
+	height: 5vh;
+}
+main {
+	padding: 0px 20px;
+}
+footer {
+	height: 5vh;
+}
+section {
+	min-width: 150px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 20vh;
+	text-align: center;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	min-height: 150px;
+}
+.App {
+	width: 100vw;
+	height: 100vh;
+}
+.flex-container {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-space-evenly {
+	justify-content: space-evenly;
+}
+.flex-row-gap {
+	row-gap: 20px;
+}
+.grid-container {
+	display: grid;
+}

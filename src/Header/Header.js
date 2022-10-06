@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 	return (
-		<nav>
+		<nav className='flex-container flex-space-evenly'>
 			<Link to={'/'}>Gamepedia</Link>
 			<Link to={'/games'}>Games</Link>
 			<Link to={'/developers'}>Developers</Link>

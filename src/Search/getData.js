@@ -1,16 +1,20 @@
-export const getData = (searchObject) => {
+export const getData = async (searchObject) => {
 	const url = `${searchObject.api}${searchObject.endpoint}?key=${
 		searchObject.key
 	}&page_size=${searchObject.limit}${
 		searchObject.hasOwnProperty('searchString')
 			? `&search=${searchObject.searchString}`
 			: ''
-	}`;
+	}${searchObject.id != null ? `&id=${searchObject.id}` : ''}`;
 	let result;
-	fetch(url)
+	await fetch(url)
 		.then((res) => res.json())
 		.then((data) => {
-			result = data.results;
+			if (searchObject.id != null) {
+				result = [data];
+			} else {
+				result = data.results;
+			}
 		})
 		.catch(console.error);
 	return result;
