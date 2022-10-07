@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getData } from './getData';
-import { mockData } from './mockData';
+import { getData } from '../Search/getData';
+import { mockData } from '../Search/mockData';
 
 function SearchResult() {
 	const params = useParams();
@@ -18,8 +18,8 @@ function SearchResult() {
 		// getData(searchOptions).then((data) => {
 		// 	setData(data);
 		// });
-		setData(mockData);
-	}, []);
+		setData(mockData(params));
+	}, [params]);
 
 	return (
 		<div className='flex-container flex-wrap flex-space-evenly flex-row-gap'>

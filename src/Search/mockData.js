@@ -1,4 +1,4 @@
-export const mockData = () => {
+export const mockData = (params) => {
 	const data = [
 		{
 			id: 3498,
@@ -10392,5 +10392,9 @@ export const mockData = () => {
 			],
 		},
 	];
+	if (params.hasOwnProperty('id')) {
+		const result = data.filter((element) => element.id == params.id);
+		return result;
+	}
 	return data;
 };

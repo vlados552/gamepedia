@@ -6,7 +6,7 @@ function SearchForm(props) {
 	function handleSubmit() {}
 	function handleChange() {}
 	return (
-		<form onSubmit={handleSubmit} className='form-horizontal'>
+		<form onSubmit={handleSubmit} className='center'>
 			<input
 				placeholder='Search'
 				type='text'

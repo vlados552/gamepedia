@@ -3,7 +3,8 @@ import './App.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import SearchForm from '../Search/SearchForm';
-import SearchResult from '../Search/SearchResult';
+import ResultList from '../Result/ResultList';
+import ResultItem from '../Result/ResultItem';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,12 +13,12 @@ function App() {
 			<header>
 				<Header />
 			</header>
-			<main>
-				{/* <SearchForm /> */}
+			<main className='flex-container flex-center flex-wrap flex-row-gap'>
+				<SearchForm />
 				<Routes>
-					<Route path='/' element={<SearchResult />} />
-					<Route path='/:area/' element={<SearchResult />} />
-					<Route path='/:area/:id' element={<SearchResult />} />
+					<Route path='/' element={<ResultList />} />
+					<Route path='/:area/' element={<ResultList />} />
+					<Route path='/:area/:id' element={<ResultItem />} />
 				</Routes>
 			</main>
 			<footer>
