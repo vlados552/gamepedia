@@ -31,10 +31,10 @@ function ResultList() {
 		);
 	}
 	useEffect(() => {
-		// getData(searchOptions).then((data) => {
-		// 	setData(data);
-		// });
-		setData(mockData(params));
+		getData(searchOptions).then((data) => {
+			setData(data);
+		});
+		// setData(mockData(params));
 	}, [params]);
 
 	return (
