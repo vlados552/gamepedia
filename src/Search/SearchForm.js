@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../Icons/Icons';
 
 function SearchForm(props) {
-	let searchString;
-	function handleSubmit() {}
-	function handleChange() {}
+	const [searchString, setSearchString] = useState('');
+	const navigate = useNavigate();
+	function handleSubmit(e) {
+		e.preventDefault();
+		navigate(`/search/${searchString}`);
+		setSearchString('');
+	}
+	function handleChange(e) {
+		setSearchString(e.target.value);
+	}
 	return (
-		<form onSubmit={handleSubmit} className='center'>
-			<input
-				placeholder='Search'
-				type='text'
-				name='searchString'
-				required
-				onChange={handleChange}
-				value={searchString}
-			/>
-			<button type='submit'>
-				<SearchIcon height='1rem' width='1rem' />
-			</button>
-		</form>
+		<div>
+			<form onSubmit={handleSubmit}>
+				<input
+					placeholder='Search'
+					type='text'
+					name='searchString'
+					required
+					onChange={handleChange}
+					value={searchString}
+				/>
+				<button type='submit'>
+					<SearchIcon height='1rem' width='1rem' />
+				</button>
+			</form>
+		</div>
 	);
 }
 

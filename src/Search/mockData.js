@@ -1,5 +1,5 @@
 export const mockData = (params) => {
-	const data = [
+	const results = [
 		{
 			id: 3498,
 			slug: 'grand-theft-auto-v',
@@ -493,6 +493,10 @@ export const mockData = (params) => {
 						'https://media.rawg.io/media/screenshots/592/592e2501d8734b802b2a34fee2df59fa.jpg',
 				},
 			],
+			description_raw:
+				'Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. \nSimultaneous storytelling from three unique perspectives: \nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. \nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.',
+			description:
+				'<p>Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. <br />\nSimultaneous storytelling from three unique perspectives: <br />\nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. <br />\nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.</p>',
 		},
 		{
 			id: 3328,
@@ -10392,9 +10396,13 @@ export const mockData = (params) => {
 			],
 		},
 	];
+	const data = {
+		count: 387452,
+		results: results,
+	};
 	if (params.hasOwnProperty('id')) {
-		const result = data.filter((element) => element.id == params.id);
-		return result;
+		const result = data.results.filter((element) => element.id == params.id);
+		return result[0];
 	}
 	return data;
 };
