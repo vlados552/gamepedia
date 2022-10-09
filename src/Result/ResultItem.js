@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getData } from '../Search/getData';
 import ReadMore from '../ReadMore/ReadMore';
-import { mockData } from '../Search/mockData';
 
 function ResultItem(props) {
 	const params = useParams();
@@ -19,7 +18,6 @@ function ResultItem(props) {
 		getData(searchOptions).then((data) => {
 			setData(data);
 		});
-		// setData(mockData(params));
 	}, [params]);
 
 	function renderData() {

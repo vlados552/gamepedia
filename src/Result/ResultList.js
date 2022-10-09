@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getData } from '../Search/getData';
-import { mockData } from '../Search/mockData';
 import { ArrowRightIcon, ArrowLeftIcon } from '../Icons/Icons';
 
 function ResultList() {
@@ -34,7 +33,6 @@ function ResultList() {
 		getData(searchOptions).then((data) => {
 			setData(data);
 		});
-		// setData(mockData(params));
 	}, [params]);
 
 	return (
