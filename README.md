@@ -30,9 +30,9 @@ Gamepedia is a platform to search games and check their description, date of rel
 
 ### :smiling_face_with_three_hearts: User stories:
 
-As a user, I want to see the list of games sorted by popularity, so I can find popular game that I can play.
-As a user, I want to search game and see description about it, so I can understand what is this game.
-As a user, I want to see rating of the game on game page, so I can make sure that the game is worth my time.
+1. As a user, I want to see the list of games sorted by popularity, so I can find popular game that I can play.
+2. As a user, I want to search game and see description about it, so I can understand what is this game.
+3. As a user, I want to see rating of the game on game page, so I can make sure that the game is worth my time.
 
 ### :page_with_curl: Wireframe
 <img width="800" alt="Hierarchy" src="https://user-images.githubusercontent.com/81039516/194810913-152dc524-f51e-471f-b7e7-13201ae4aa7d.png">
