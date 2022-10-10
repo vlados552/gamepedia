@@ -3,6 +3,8 @@
 ## Description
 
 Gamepedia is a platform to search games and check their description, date of release and rating.
+<img width="693" alt="Gamepedia1" src="https://user-images.githubusercontent.com/81039516/194811676-d0ad0d91-16bf-499c-b330-64ef23f7f826.png">
+<img width="698" alt="Gamepedia2" src="https://user-images.githubusercontent.com/81039516/194811687-3c7c612f-15e5-43fe-928f-1064733708e4.png">
 
 ### :hammer_and_wrench: Used technologies
 
