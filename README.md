@@ -33,3 +33,5 @@ As a user, I want to search game and see description about it, so I can understa
 As a user, I want to see rating of the game on game page, so I can make sure that the game is worth my time.
 
 ### :page_with_curl: Wireframe
+<img width="800" alt="Hierarchy" src="https://user-images.githubusercontent.com/81039516/194810913-152dc524-f51e-471f-b7e7-13201ae4aa7d.png">
+
