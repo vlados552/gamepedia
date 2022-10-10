@@ -2,11 +2,15 @@ body {
 	background-color: black;
 	color: white;
 }
+h1 {
+	font-size: 28px;
+	padding: 0 20px;
+}
 a {
 	color: white;
 }
 header {
-	height: 5vh;
+	height: 10vh;
 }
 main {
 	padding: 0px 20px;
@@ -29,10 +33,18 @@ img {
 	min-height: 150px;
 }
 nav {
-	height: 100%;
+	height: 50%;
+	width: 100%;
 }
 .center {
 	margin: auto;
+}
+.arrow {
+	height: 2rem;
+	width: 2rem;
+}
+.div-arrow {
+	display: inline;
 }
 .App {
 	width: 100vw;
@@ -50,8 +62,14 @@ nav {
 .flex-row-gap {
 	row-gap: 20px;
 }
+.flex-column-gap {
+	column-gap: 10px;
+}
 .flex-center {
 	align-items: center;
+}
+.flex-center-justify {
+	justify-content: center;
 }
 .grid-container {
 	display: grid;
@@ -72,13 +90,17 @@ nav {
 .grid-area-ag {
 	grid-area: ag;
 }
+.grid-area-ad {
+	grid-area: ad;
+}
 .grid-template-item {
 	grid-template-areas:
 		'ai'
 		'an'
 		'ar'
 		'ac'
-		'ag';
+		'ag'
+		'ad';
 }
 @media only screen and (min-width: 500px) {
 	.grid-template-item {
@@ -88,7 +110,8 @@ nav {
 			'an an'
 			'ar .'
 			'ac ac'
-			'ag ag';
+			'ag ag'
+			'ad ad';
 	}
 }
 @media only screen and (min-width: 600px) {
@@ -99,6 +122,7 @@ nav {
 			'ai ai an an'
 			'ai ai ar .'
 			'ai ai ac ac'
-			'ai ai ag ag';
+			'ai ai ag ag'
+			'ad ad ad ad';
 	}
 }
