@@ -1,0 +1,104 @@
+body {
+	background-color: black;
+	color: white;
+}
+a {
+	color: white;
+}
+header {
+	height: 5vh;
+}
+main {
+	padding: 0px 20px;
+}
+footer {
+	height: 5vh;
+}
+section {
+	min-width: 150px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 20vh;
+	text-align: center;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	min-height: 150px;
+}
+nav {
+	height: 100%;
+}
+.center {
+	margin: auto;
+}
+.App {
+	width: 100vw;
+	height: 100vh;
+}
+.flex-container {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-space-evenly {
+	justify-content: space-evenly;
+}
+.flex-row-gap {
+	row-gap: 20px;
+}
+.flex-center {
+	align-items: center;
+}
+.grid-container {
+	display: grid;
+}
+.grid-area-ai {
+	grid-area: ai;
+}
+.grid-area-an {
+	grid-area: an;
+	text-align: center;
+}
+.grid-area-ar {
+	grid-area: ar;
+}
+.grid-area-ac {
+	grid-area: ac;
+}
+.grid-area-ag {
+	grid-area: ag;
+}
+.grid-template-item {
+	grid-template-areas:
+		'ai'
+		'an'
+		'ar'
+		'ac'
+		'ag';
+}
+@media only screen and (min-width: 500px) {
+	.grid-template-item {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'ai ai'
+			'an an'
+			'ar .'
+			'ac ac'
+			'ag ag';
+	}
+}
+@media only screen and (min-width: 600px) {
+	.grid-template-item {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			'ai ai an an'
+			'ai ai ar .'
+			'ai ai ac ac'
+			'ai ai ag ag';
+	}
+}
